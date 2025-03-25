@@ -270,8 +270,8 @@ function saveTickets() {
 // - Call this function whenever the page is loaded.
 function loadTickets() {
   let ticketsList = localStorage.getItem('tickets');
+  if(ticketsList!=null){
  ticketsArr = JSON.parse(ticketsList);
- if(ticketsArr.length>0){
   ticketsArr.forEach(function (ticket) {
     createTicket(ticket.color, ticket.id, ticket.task,true);
   });
