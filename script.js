@@ -258,7 +258,6 @@ function handleColor(ticket) {
 // - Save the JSON string to local storage with the key "tickets".
 // - Call this function whenever a ticket is added, removed, or modified.
 function saveTickets() {
-  console.log(ticketsArr);
   localStorage.setItem('tickets', JSON.stringify(ticketsArr));
 }
 
